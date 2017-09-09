@@ -30,7 +30,9 @@ get('/some/nifty/api?cool=yes').then(responseBody => {
 - `serialize`: function, defaults to `body => JSON.stringify(body)`
 - `headers`: object, defaults to `{}`
 
-## `promise = makeXhr(url, body)`
+## `promise = makeXhr(url, [body])`
+
+If it's defined, `body` will be passed to `serialize` before sending to the server.
 
 Returns a promise that is rejected if `success` returns false, if the XHR emits `error` or `abort`, or if the `parse` function throws.
 
