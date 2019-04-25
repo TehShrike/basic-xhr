@@ -12,7 +12,7 @@ const createRequestFunction = require('basic-xhr')
 
 The module exports a function that takes options and returns a re-usable XHR function.
 
-## `makeXhr` = `createRequestFunction(options)`
+## `makeXhr = createRequestFunction(options)`
 
 ```js
 const get = createRequestFunction()
